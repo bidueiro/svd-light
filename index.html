@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="utf-8">
+  <title>SvD Light Mode - Tillgänglighet</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <style>
+    body {font-family:Arial,sans-serif;max-width:600px;margin:40px auto;padding:0 20px;line-height:1.6;}
+    .bookmarklet {display:inline-block;background:#007cba;color:white;padding:15px 25px;border-radius:8px;text-decoration:none;font-weight:bold;font-size:18px;box-shadow:0 4px 8px rgba(0,124,186,0.3);transition:background 0.2s;}
+    .bookmarklet:hover {background:#005a87;}
+    h1 {color:#333;margin-bottom:10px;}
+    .info {background:#f0f8ff;padding:20px;border-radius:8px;border-left:4px solid #007cba;margin:20px 0;}
+  </style>
+</head>
+<body>
+  <h1>SvD Light Mode Bookmarklet</h1>
+  
+  <p>Fixar läsbarthet på <a href="https://www.svd.se">SvD.se</a> för personer med svagt röd-grönt färgseende.</p>
+  
+<a href="javascript:(function(){const r=document.documentElement;b=document.body;if(!r||!b)return;b.classList.remove('dark-theme','theme-dark');b.classList.add('light-theme','theme-light');r.style.setProperty('--backgroundColor','#ffffff','important');r.style.setProperty('--blackTintColor','#111111','important');r.style.setProperty('--backgroundSemiTransparentColor','rgba(255,255,255,0.95)','important');r.style.setProperty('--invertedTextColor','#111111','important');b.style.backgroundColor='#ffffff';b.style.color='#111111';console.log('SvD Light Mode aktiverat');})();" class="bookmarklet">
+  🚀 Lägg till SvD Light Mode
+</a>
+  
+  <div class="info">
+    <h3>🛠️ Så här använder du:</h3>
+    <ol>
+      <li><strong>Drag</strong> bokmärkesknappen ovan till ditt bokmärkesfält</li>
+      <li>Öppna en SvD-artikel</li>
+      <li><strong>Klicka på bokmärket</strong> — sidan blir ljus med svart text!</li>
+    </ol>
+    <p><em>Fungerar i Chrome, Firefox, Safari, Edge. Inget tillägg behövs.</em></p>
+  </div>
+  
+  <h3>Varför behövs detta?</h3>
+  <p>SvD:s mörka tema (`#242d41` bakgrund + ljusgrön grafiktext) har dålig kontrast för röd-grön färgseende. Bookmarklet fixar CSS-variablerna `--backgroundColor` och `--blackTintColor` [file:21][web:30].</p>
+  
+  <footer>
+    <p>Made for accessibility. <a href="https://github.com/ditt-användarnamn/svd-light-mode-bookmarklet">GitHub</a></p>
+  </footer>
+</body>
+</html>
