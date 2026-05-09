@@ -1,6 +1,6 @@
 # SvD Light Mode Bookmarklet 🚀
 
-**Fixar läsbarthet på SvD.se för personer med röd-grön färgseende.** Ingen installation!
+**Slår av dark mode på SvD.se för bättre läsbarthet!** Ingen installation!
 
 ## 📱 Installation (10 sekunder)
 1. Öppna [bidueiro.github.io/svd-light/](https://bidueiro.github.io/svd-light/)
